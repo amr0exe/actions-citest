@@ -51,7 +51,7 @@ jobs:
         run: |
           echo "READING from preceding step"
           echo "VERSION: ${{ steps.package_step.outputs.pkg_version }}"
-          echo "Built at: ${{ step.package_step.outputs.timestamp }}"
+          echo "Built at: ${{ steps.package_step.outputs.timestamp }}"
 
   deploy:
     needs: build
